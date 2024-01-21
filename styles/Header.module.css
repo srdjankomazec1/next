@@ -1,0 +1,232 @@
+/* header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    padding: 40px 100px;
+    transition: 0.6s;
+}
+header.sticky{
+    padding: 5px 100px;
+    background: #fff;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+}
+header .logo{
+    position: relative;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.6s;
+}
+header ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li{
+    list-style: none;
+    position: relative;
+}
+header ul li a{
+    position: relative;
+    text-decoration: none;
+    margin: 0 15px;
+    color: #fff;
+    letter-spacing: 2px;
+    transition: 0.6s;
+    font-weight: 300;
+}
+header.sticky .logo,
+header.sticky ul li a{
+    color: #000;
+} */
+/* 
+.header {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    padding: 40px 100px;
+    transition: 0.6s;
+  } */
+  
+/* 
+  header .logo{
+    position: relative;
+    font-weight: 700;
+    color: #d7b0b0;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.6s;
+}
+  
+  header nav a  {
+
+    position: relative;
+    text-decoration: none;
+    margin: 0 15px;
+    color: #a81919;
+    letter-spacing: 2px;
+    transition: 0.6s;
+    font-weight: 300;
+  }
+  
+
+  
+  .burger_menu {
+    display: none;
+    cursor: pointer;
+    background: #630c0c;
+    border: 1px solid red;
+  }
+  
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: rgb(13, 176, 70);
+    margin: 5px 0;
+    transition: 0.4s;
+    
+  }
+  
+  .open {
+    transform: rotate(-45deg);
+  } */
+  
+  .header {
+    background-color: transparent;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    /* background-color: red !important; */
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+  }
+  
+  .nav {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav li {
+    margin-right: 10px;
+  }
+  
+  .nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+  }
+  
+  .burgerMenu {
+    display: none ;
+    /* cursor: pointer; */
+
+  } 
+  
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 3px 0;
+    transition: 0.4s;
+  }
+  
+  .open {
+    transform: rotate(-45deg);
+  }
+  
+  .burgerLinks {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: #333;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .burgerLinks a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+  }
+  
+  .show {
+    display: flex;
+  }
+
+  @media only screen and (max-width: 991px) {
+    .nav {
+      display: none;
+    }
+    
+    .header {
+        /* background-color: transparent;
+        color: white; */
+        /* padding:  5px 55px; */
+        /* display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        width: 100%;
+        z-index: 1000; */
+      }
+    .burgerMenu {
+      display: flex;
+      flex-direction: column;
+     z-index: 1000;
+     cursor: pointer;
+    }
+    .logo {
+      z-index: 1000;
+      }
+      .burgerLinks {
+        cursor: pointer;
+        position: absolute;
+        top: 0;
+        width: 100vw;
+        padding-top: 2rem;
+    
+      }
+      
+      /* .burgerLinks a {
+        cursor: pointer;
+      } */
+  }
+  
